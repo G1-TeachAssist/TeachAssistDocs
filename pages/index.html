@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <title>Teach Assist Project</title>
 </head>
+
 <body>
-    <h1>Página Inicial do Projeto</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #2d3436">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Teach Assist</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#equipe">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#proposta">Proposta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#escopo">Escopo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#tarefas">Tarefas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h1 class="text-center mt-3">Projeto Teach Assist</h1>
+    <div class="container">
+        <h2 id="equipe" class="mt-3 mb-3">Equipe</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Andrey Jesus Pereira</td>
+                    <td>01andreyjesuspereira@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Felipe Sartore Perez de Azevedo</td>
+                    <td>felipesartore@yahoo.com.br</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Júlia Porphirio</td>
+                    <td>juliaporphirio@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Mariana Pinheiro </td>
+                    <td>mrndsp@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <h2 id="proposta" class="mt-5 mb-3">Proposta</h2>
+        <table class="table">
+            <tr class="table-secondary">
+                <td class="fw-bold">Tema</td>
+            </tr>
+            <tr>
+                <td class="pb-4">
+                    Educação: análise de notas escolares para apoiar os professores na verificação de
+                    assuntos/disciplinas que precisam ser melhor trabalhados com seus alunos.
+                </td>
+            </tr>
+            <tr class="table-secondary">
+                <td class="fw-bold">Justificativa</td>
+            </tr>
+            <tr>
+                <td class="pb-4">
+                    O projeto proposto visa desenvolver um Sistema de Análise de Notas Escolares com o objetivo de
+                    auxiliar os professores na avaliação da qualidade do ensino oferecido e no acompanhamento do
+                    desempenho acadêmico dos alunos. A justificativa para a criação desse sistema é fundamentada na
+                    necessidade de aprimorar o processo educacional, fornecendo aos educadores uma ferramenta eficaz
+                    para analisar de forma objetiva as notas escolares e identificar áreas que necessitam de maior
+                    atenção e melhoria. <br>
+                    Atualmente, a análise manual das notas dos alunos é uma tarefa trabalhosa e passível de erros, além
+                    de demandar um tempo significativo por parte dos professores. Com o auxílio do Sistema de Análise de
+                    Notas Escolares, os professores terão acesso a uma plataforma intuitiva e funcional que permitirá a
+                    inserção e o acompanhamento das notas dos alunos de maneira simplificada e eficiente. <br>
+                    Além disso, o sistema proporcionará uma visão panorâmica do desempenho das turmas e disciplinas,
+                    possibilitando uma análise comparativa entre diferentes bimestres ou semestres. Isso permitirá que
+                    os professores identifiquem tendências de desempenho dos alunos ao longo do tempo e tomem medidas
+                    preventivas ou corretivas quando necessário.
+                    Outro aspecto relevante é a capacidade do sistema de fornecer análises detalhadas sobre o desempenho
+                    dos alunos em cada disciplina, calculando médias e indicando pontos que podem ser melhorados no
+                    processo de ensino-aprendizagem. Essas informações são essenciais para que os professores possam
+                    adaptar suas práticas pedagógicas e oferecer um ensino mais eficiente e personalizado. <br>
+                    Em resumo, o Sistema de Análise de Notas Escolares representa uma ferramenta fundamental para
+                    aprimorar o processo educacional, fornecendo aos professores e gestores educacionais informações
+                    precisas e relevantes para a tomada de decisões e o desenvolvimento de estratégias pedagógicas mais
+                    eficazes. <br>
+                </td>
+            </tr>
+            <tr class="table-secondary">
+                <td class="fw-bold">Objetivos</td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            Construir um projeto de software que seja capaz de apoiar os professores na análise da
+                            qualidade do ensino ofertado e também no processo de aprendizado de seus alunos;
+                        </li>
+                        <li>
+                            Fornecer uma análise dos dados cadastrados pelos professores de modo a esboçar a real
+                            situação de desempenho dos alunos em cada disciplina;
+                        </li>
+                        <li>
+                            Possibilitar fácil acesso às notas dos alunos, médias das turmas e comparativos de
+                            rendimentos entre os bimestres.
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <h2 class="mt-5 mb-3" id="escopo">Escopo do Projeto</h2>
+        <ul>
+            <li>[RF01] O sistema deve permitir o cadastro de professores, alunos e disciplinas;</li>
+            <li>[RF02] O sistema deve permitir a criação de turmas baseado nos professores, alunos e disciplinas existentes;</li>
+            <li>[RF03] O sistema deve permitir ao professor a inserção de notas para cada aluno nas disciplinas e turmas
+                para os quais leciona;</li>
+            <li>[RF04] O sistema deve calcular e exibir para o professor a média dos alunos em sua disciplina;</li>
+            <li>[RF05] O sistema deve permitir a verificação de pontos que podem ser melhorados pelo professor no ensino das disciplinas que leciona baseado em uma comparação com um esquema de categorias de risco;</li>
+            <li>[RF06] O sistema deve permitir o comparativo do desempenho da turma em diferentes bimestres ou semestres;</li>
+            <li>[RF07] O sistema deve possibilitar uma visão geral de todas as turmas e disciplinas cadastradas, de modo a permitir uma análise de quais disciplinas estão dentro do desempenho esperado.</li>
+            <li>[RF08] O sistema deve exibir gráficos estatísticos que auxiliem da visualização do desempenho de cada turma em cada disciplina. </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2 class="mt-5 mb-3" id="tarefas">Tarefas do projeto</h2>
+        <p>
+            O controle de tarefas do projeto pode ser encontrado em: <a href="https://trello.com/b/mJavRap9/eng-de-software-equipe-1-projeto-gest%C3%A3o-de-notas">Trello - Eng de Software Equipe 1</a>
+        </p>
+    </div>
 </body>
+
 </html>
